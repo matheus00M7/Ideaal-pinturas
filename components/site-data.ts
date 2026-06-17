@@ -23,8 +23,8 @@ export const contact = {
   whatsappHref:
     "https://wa.me/11968260063?text=Ola%2C%20gostaria%20de%20solicitar%20um%20orcamento%20para%20pintura%20predial.",
   phone: "(11) 96826-0063",
-  instagram: "@ideaalpinturas",
-  email: "contato@ideaalpinturas.com.br",
+  instagram: "@ideaal_pinturas_predial",
+  email: "marcosmcrl3@gmail.com",
   region: "Sao Paulo/SP e regiao metropolitana",
   cnpj: "63.015.343/0001-40"
 };
