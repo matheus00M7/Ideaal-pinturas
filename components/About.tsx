@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CheckCircle2 } from "lucide-react";
+import { Building2, CheckCircle2, MapPin } from "lucide-react";
 import { SectionHeading } from "@/components/SectionHeading";
 
 const qualities = [
@@ -45,9 +45,31 @@ export function About() {
               className="h-auto w-full object-contain p-8"
             />
           </div>
-          <div className="absolute -bottom-5 right-5 rounded-lg bg-ideaal-navy px-5 py-4 text-white shadow-premium">
-            <p className="text-3xl font-bold text-ideaal-orange">SP</p>
-            <p className="mt-1 text-sm font-semibold">Atendimento regional</p>
+          <div className="mt-4 grid gap-3 sm:grid-cols-2">
+            <div className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded bg-ideaal-orange/12 text-ideaal-orange">
+                <MapPin className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                  Regiao
+                </p>
+                <p className="text-sm font-bold text-ideaal-ink">Sao Paulo/SP</p>
+              </div>
+            </div>
+            <div className="flex items-center gap-3 rounded-lg border border-slate-200 bg-white px-4 py-3 shadow-sm">
+              <span className="flex h-10 w-10 items-center justify-center rounded bg-ideaal-blue text-white">
+                <Building2 className="h-5 w-5" aria-hidden="true" />
+              </span>
+              <div>
+                <p className="text-xs font-bold uppercase tracking-wide text-slate-500">
+                  Atendimento
+                </p>
+                <p className="text-sm font-bold text-ideaal-ink">
+                  Condominios e empresas
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
