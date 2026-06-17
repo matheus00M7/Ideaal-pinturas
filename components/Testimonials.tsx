@@ -4,7 +4,7 @@ import { testimonials } from "@/components/site-data";
 
 export function Testimonials() {
   return (
-    <section className="bg-ideaal-mist py-20 md:py-28">
+    <section className="bg-ideaal-mist py-14 sm:py-20 md:py-28">
       <div className="section-shell">
         <SectionHeading
           eyebrow="Depoimentos"
@@ -12,11 +12,11 @@ export function Testimonials() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-5 sm:mt-12 md:grid-cols-3 md:gap-6">
           {testimonials.map((testimonial) => (
             <article
               key={testimonial.name}
-              className="rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
+              className="rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-6"
             >
               <Quote className="h-8 w-8 text-ideaal-orange" aria-hidden="true" />
               <p className="mt-5 text-base leading-7 text-slate-700">

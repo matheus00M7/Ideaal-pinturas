@@ -3,7 +3,7 @@ import { differentials } from "@/components/site-data";
 
 export function Differentials() {
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-white py-14 sm:py-20 md:py-28">
       <div className="section-shell">
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
           <SectionHeading
@@ -12,13 +12,13 @@ export function Differentials() {
             description="Um bom resultado depende de processo, cuidado com o local e comunicacao objetiva. A IDEAAL combina atendimento proximo com padrao profissional de execucao."
           />
 
-          <div className="grid gap-4 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-2 sm:gap-4">
             {differentials.map((item) => {
               const Icon = item.icon;
               return (
                 <div
                   key={item.title}
-                  className="flex min-h-24 items-center gap-4 rounded-lg border border-slate-200 bg-white p-5 shadow-sm"
+                  className="flex min-h-20 items-center gap-4 rounded-lg border border-slate-200 bg-white p-4 shadow-sm sm:min-h-24 sm:p-5"
                 >
                   <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded bg-ideaal-blue text-white">
                     <Icon className="h-5 w-5" aria-hidden="true" />

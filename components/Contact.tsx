@@ -4,14 +4,14 @@ import { contact, contactItems } from "@/components/site-data";
 
 export function Contact() {
   return (
-    <section id="contato" className="bg-white py-20 md:py-28">
+    <section id="contato" className="bg-white py-14 sm:py-20 md:py-28">
       <div className="section-shell">
         <div className="grid overflow-hidden rounded-lg border border-slate-200 bg-white shadow-premium lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="bg-ideaal-navy p-8 text-white sm:p-10 lg:p-12">
+          <div className="bg-ideaal-navy p-6 text-white sm:p-10 lg:p-12">
             <p className="text-sm font-bold uppercase tracking-wide text-ideaal-orange">
               Contato
             </p>
-            <h2 className="mt-3 text-3xl font-bold leading-tight md:text-4xl">
+            <h2 className="mt-3 text-2xl font-bold leading-tight sm:text-3xl md:text-4xl">
               Solicite um orcamento para pintura predial
             </h2>
             <p className="mt-6 text-base leading-7 text-white/74">
@@ -30,19 +30,19 @@ export function Contact() {
             </a>
           </div>
 
-          <div className="p-8 sm:p-10 lg:p-12">
+          <div className="p-6 sm:p-10 lg:p-12">
             <SectionHeading
               eyebrow="Canais"
               title="Fale com a IDEAAL"
               description="Atendimento para condominios, comercios e residencias em Sao Paulo e regiao metropolitana."
             />
-            <div className="mt-12 grid gap-4 sm:grid-cols-2">
+            <div className="mt-10 grid gap-4 sm:mt-12 sm:grid-cols-2">
               {contactItems.map((item) => {
                 const Icon = item.icon;
                 return (
                   <div
                     key={item.label}
-                    className="rounded-lg border border-slate-200 bg-ideaal-mist p-5"
+                    className="rounded-lg border border-slate-200 bg-ideaal-mist p-4 sm:p-5"
                   >
                     <div className="flex items-center gap-3">
                       <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded bg-white text-ideaal-orange">

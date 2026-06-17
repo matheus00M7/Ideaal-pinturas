@@ -4,7 +4,7 @@ import { steps } from "@/components/site-data";
 
 export function Process() {
   return (
-    <section className="bg-white py-20 md:py-28">
+    <section className="bg-white py-14 sm:py-20 md:py-28">
       <div className="section-shell">
         <SectionHeading
           eyebrow="Como trabalhamos"
@@ -12,11 +12,11 @@ export function Process() {
           description="Cada etapa e conduzida com comunicacao objetiva, preparando a superficie e protegendo os ambientes antes da pintura."
         />
 
-        <div className="mt-14 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-10 grid gap-3 sm:mt-14 sm:gap-4 md:grid-cols-2 lg:grid-cols-3">
           {steps.map((step, index) => (
             <article
               key={step}
-              className="relative rounded-lg border border-slate-200 bg-white p-6 shadow-sm"
+              className="relative rounded-lg border border-slate-200 bg-white p-5 shadow-sm sm:p-6"
             >
               <div className="flex items-center justify-between gap-4">
                 <span className="flex h-11 w-11 items-center justify-center rounded bg-ideaal-orange text-base font-bold text-white">

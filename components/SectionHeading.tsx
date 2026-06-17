@@ -23,14 +23,14 @@ export function SectionHeading({
         {eyebrow}
       </p>
       <h2
-        className={`mt-3 text-3xl font-bold leading-tight text-ideaal-ink md:text-4xl ${
+        className={`mt-3 text-2xl font-bold leading-tight text-ideaal-ink sm:text-3xl md:text-4xl ${
           align === "left" ? "orange-rule" : ""
         }`}
       >
         {title}
       </h2>
       {description ? (
-        <p className="mt-7 text-base leading-7 text-slate-600 md:text-lg">
+        <p className="mt-6 text-base leading-7 text-slate-600 md:mt-7 md:text-lg">
           {description}
         </p>
       ) : null}
